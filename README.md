@@ -205,3 +205,113 @@
 商品分类管理：管理员点击商品分类管理。在商品分类页面输入商品分类进行查询、新增或删除商品分类列表，并根据需要对商品分类详细信息进行修改或删除操作
 
 ![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-10.png)
+
+# 美食信息管理
+
+管理员点击美食信息管理。在美食信息页面输入商品名称、食材、店铺名称、价格进行查询或删除美食信息列表，并根据需要对美食详细信息进行详情或删除操作。如下图所示：
+
+![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-11.png)
+
+# 系统管理
+
+管理员点击系统管理。在美食资讯页面输入标题进行查询、新增或删除美食资讯列表，并根据需要对美食资讯详细信息进行详情、修改或删除操作。如下图所示：
+
+![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-12.png)
+
+# 订单管理
+
+管理员点击订单管理。在已完成订单页面输入订单编号和商品名称进行查询或删除已完成订单列表，进行日销量、月销量、年销量、商品销量、类型销量、日销额、月销额、年销额统计，并根据需要对已完成订单详细信息进行详情操作，还可以对已退款订单、未支付订单、已发货订单、已支付订单和已取消订单进行详细操作。如下图所示：
+
+![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-13.png)
+
+# 5.2.2用户模块实现
+
+## 用户主介面
+
+用户进入主界面，主要功能包括对系统首页、个人中心等进行操作。用户主界面如下图所示：
+
+![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-14.png)
+
+# 5.2.3商家模块实现
+
+## 商家主介面
+
+商家进入主界面，主要功能包括对系统首页、个人中心、美食信息管理、订单管理等进行操作。商家主界面如下图所示：
+
+![商家管理界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/5-15.png)
+
+#
+
+# 代码实现
+
+## 用户登录
+def users_login(request):
+    if request.method in ["POST", "GET"]:
+        msg = {'code': normal_code, "msg": mes.normal_code}
+        req_dict = request.session.get("req_dict")
+        if req_dict.get('role') != None:
+            del req_dict['role']
+        datas = users.getbyparams(users, users, req_dict)
+        if not datas:
+            msg['code'] = password_error_code
+            msg['msg'] = mes.password_error_code
+            return JsonResponse(msg)
+
+        req_dict['id'] = datas[0].get('id')
+        return Auth.authenticate(Auth, users, req_dict)
+
+
+## 用户注册
+def users_register(request):
+    if request.method in ["POST", "GET"]:
+        msg = {'code': normal_code, "msg": mes.normal_code}
+        req_dict = request.session.get("req_dict")
+
+        error = users.createbyreq(users, users, req_dict)
+        if error != None:
+            msg['code'] = crud_error_code
+            msg['msg'] = error
+        return JsonResponse(msg)
+
+
+## 获取用户session信息
+def users_session(request):
+    if request.method in ["POST", "GET"]:
+        msg = {"code": normal_code, "msg": mes.normal_code, "data": {}}
+
+        req_dict = {"id": request.session.get('params').get("id")}
+        msg['data'] = users.getbyparams(users, users, req_dict)[0]
+
+        return JsonResponse(msg)
+
+
+## 用户退出登录
+def users_logout(request):
+    if request.method in ["POST", "GET"]:
+        msg = {"msg": "退出成功", "code": 0}
+        return JsonResponse(msg)
+
+
+## 用户页面信息
+def users_page(request):
+    if request.method in ["POST", "GET"]:
+        msg = {"code": normal_code, "msg": mes.normal_code,
+               "data": {"currPage": 1, "totalPage": 1, "total": 1, "pageSize": 10, "list": []}}
+        req_dict = request.session.get("req_dict")
+        tablename = request.session.get("tablename")
+        try:
+            __hasMessage__ = users.__hasMessage__
+        except:
+            __hasMessage__ = None
+        if __hasMessage__ and __hasMessage__ != "否":
+
+            if tablename != "users":
+                req_dict["userid"] = request.session.get("params").get("id")
+        if tablename == "users":
+            msg['data']['list'], msg['data']['currPage'], msg['data']['totalPage'], msg['data']['total'], \
+            msg['data']['pageSize'] = users.page(users, users, req_dict)
+        else:
+            msg['data']['list'], msg['data']['currPage'], msg['data']['totalPage'], msg['data']['total'], \
+            msg['data']['pageSize'] = [], 1, 0, 0, 10
+
+        return JsonResponse(msg)
