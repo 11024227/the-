@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" modified="2024-01-02T14:45:31.503Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.16" etag="FjKjiR3uWdiRtydNrIC6" type="device">
+  <diagram id="XhFeSS0hLnYpmfCucpNg" name="第1頁">
+    <mxGraphModel dx="1194" dy="459" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-7" y="65" width="623" height="468" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-3" value="用戶介面層" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-2" y="124" width="109" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-4" value="javaWeb" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="185" y="94" width="275" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-5" value="User Interface Processing" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="185" y="150" width="275" height="44" as="geometry" />
+        </mxCell>
+        <object label="" id="OPWvQK6fvzon1mA6nCjV-11">
+          <mxCell style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="7.75" y="222" as="sourcePoint" />
+              <mxPoint x="595.75" y="219" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="180" y="249" width="280" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="180" y="309" width="246" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-14" value="業務邏輯層" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="7.75" y="298" width="89.5" height="30" as="geometry" />
+        </mxCell>
+        <object label="" id="OPWvQK6fvzon1mA6nCjV-15">
+          <mxCell style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="4" y="382" as="sourcePoint" />
+              <mxPoint x="592" y="379" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-16" value="數據訪問層" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="7.75" y="436" width="89.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OPWvQK6fvzon1mA6nCjV-17" value="Dal Interface" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="180" y="408" width="118" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xOPnGFSnEviTfgZ8hXl2-1" value="Dal Factory" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="342" y="408" width="118" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xOPnGFSnEviTfgZ8hXl2-2" value="MySQL Dal" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="180" y="460" width="118" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xOPnGFSnEviTfgZ8hXl2-3" value="MySQL DAAB" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="342" y="460" width="118" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xOPnGFSnEviTfgZ8hXl2-4" value="Business Entities" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" parent="1" vertex="1">
+          <mxGeometry x="448.5" y="273.5" width="196" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="4E_hPGnE1m1TZI6j-L96-1" value="Business Components" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="249.5" y="268" width="141" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4E_hPGnE1m1TZI6j-L96-2" value="Enterprise Services" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="257.5" y="314.5" width="125" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

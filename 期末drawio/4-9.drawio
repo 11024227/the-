@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2024-01-02T15:05:42.277Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.16" etag="cbnuMonWqS7aUSrXy2rL" type="device">
+  <diagram id="BUGFVgfmJT-jslo2REHU" name="第1頁">
+    <mxGraphModel dx="794" dy="859" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-1" value="美食資訊" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;arcSize=23;" parent="1" vertex="1">
+          <mxGeometry x="278" y="124" width="105" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-2" value="簡介" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="247" y="-25" width="82" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-3" value="標題" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="196" y="28" width="82" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-5" value="內容" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="386" y="28" width="82" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-8" value="圖片" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="333" y="-25" width="82" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-17" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZuVnYkHqsug-6GdM3sNr-3" target="ZuVnYkHqsug-6GdM3sNr-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="137" as="sourcePoint" />
+            <mxPoint x="311" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-18" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZuVnYkHqsug-6GdM3sNr-1" target="ZuVnYkHqsug-6GdM3sNr-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="137" as="sourcePoint" />
+            <mxPoint x="311" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-19" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZuVnYkHqsug-6GdM3sNr-1" target="ZuVnYkHqsug-6GdM3sNr-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="137" as="sourcePoint" />
+            <mxPoint x="311" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZuVnYkHqsug-6GdM3sNr-20" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZuVnYkHqsug-6GdM3sNr-1" target="ZuVnYkHqsug-6GdM3sNr-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261" y="137" as="sourcePoint" />
+            <mxPoint x="311" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
