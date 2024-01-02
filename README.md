@@ -245,6 +245,7 @@
 # 代码实现
 
 ## 用户登录
+
 def users_login(request):
     if request.method in ["POST", "GET"]:
         msg = {'code': normal_code, "msg": mes.normal_code}
@@ -262,6 +263,7 @@ def users_login(request):
 
 
 ## 用户注册
+
 def users_register(request):
     if request.method in ["POST", "GET"]:
         msg = {'code': normal_code, "msg": mes.normal_code}
@@ -275,6 +277,7 @@ def users_register(request):
 
 
 ## 获取用户session信息
+
 def users_session(request):
     if request.method in ["POST", "GET"]:
         msg = {"code": normal_code, "msg": mes.normal_code, "data": {}}
@@ -286,6 +289,7 @@ def users_session(request):
 
 
 ## 用户退出登录
+
 def users_logout(request):
     if request.method in ["POST", "GET"]:
         msg = {"msg": "退出成功", "code": 0}
@@ -293,6 +297,7 @@ def users_logout(request):
 
 
 ## 用户页面信息
+
 def users_page(request):
     if request.method in ["POST", "GET"]:
         msg = {"code": normal_code, "msg": mes.normal_code,
