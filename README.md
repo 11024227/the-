@@ -45,12 +45,16 @@
 - 系统管理
 - 订单管理
 
+![系统登录流程图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-1.png)
+
 ## 商家功能
 
 - 系统首页
 - 个人中心
 - 美食信息管理
 - 订单管理
+
+![添加新用户流程图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-2.png)
 
 ## 用户功能
 
@@ -60,6 +64,8 @@
 - 后台管理
 - 购物车
 - 个人中心
+  
+![系统体系架构图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-3.png)
 
 # 3.4系统流程分析
 
@@ -70,7 +76,7 @@
 3. 输入用户名和密码。
 4. 登录成功，进入系统进行操作。
 
-![系统登录流程图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-1.png)
+![系统类图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-4.png)
 
 ## 添加新用户流程
 
@@ -80,7 +86,7 @@
 4. 验证数据完整性。
 5. 成功则返回并刷新用户列表，否则返回输入信息的那一步。
 
-![添加新用户流程图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-2.png)
+![系统功能结构图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-5.png)
 
 # 4.1架构设计
 
@@ -93,19 +99,21 @@
 5. 可维护性：跟踪错误，导入新功能需求，减少运营成本。
 6. 可升级性：系统能够进行更新迭代，提供更好的上网体验。
 
-![系统体系架构图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-3.png)
+![商家实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-1.png)
+
+![用户实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-2.png)
 
 ## 4.2系统架构类图
 
 展开包图，得到类图，它是静态结构图的架构，表达了静态联系。系统类图如下：
 
-![系统类图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-4.png)
+![美食信息实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-3.png)
 
 # 4.3系统整体设计
 
 本课题要求实现优质的外卖订餐系统，就一定要包含有数据库、服务器相联系，从而实现系统的功能运转。系统分为管理员、用户和商家三个角色，主要包括系统首页、个人中心、用户管理、商家管理、商品分类管理、美食信息管理、系统管理、订单管理等功能。
 
-![系统功能结构图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/3-5.png)
+![美食信息评论实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-4.png)
 
 # 4.4数据库设计
 
@@ -115,23 +123,23 @@
 
 商家实体属性图如下：
 
-![商家实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-1.png)
+![美食资讯实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-5.png)
 
 用户实体属性图如下：
 
-![用户实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-2.png)
+![系统首页界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-6.png)
 
 美食信息实体属性图如下：
 
-![美食信息实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-3.png)
+![系统注册界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-7.png)
 
 美食信息评论实体属性图如下：
 
-![美食信息评论实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-4.png)
+![美食信息详情信息](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-8.png)
 
 美食资讯实体属性图如下：
 
-![美食资讯实体属性图](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-5.png)
+![美食信息详情信息](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-9.png)
 
 # 5.1系统功能实现
 
@@ -139,25 +147,25 @@
 
 ## 系统首页界面
 
-![系统首页界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-6.png)
+
 
 ## 系统注册界面
 
 系统注册：在系统注册页面的输入栏中输入用户注册信息进行注册操作。
 
-![系统注册界面](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-7.png)
+
 
 ## 美食信息详情信息
 
 美食信息：在美食信息页面的输入栏中输入商品名称、食材、店铺名称、最小价格、最大价格进行查询，可以查看到美食详细信息；并进行收藏、添加到购物车、立即购买、赞一下、踩一下、评论操作。
 
-![美食信息详情信息](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-8.png)
+
 
 ## 美食资讯详情信息
 
 美食资讯：在美食资讯页面的输入栏中输入标题进行查询，可以查看到美食资讯详细信息。
 
-![美食资讯详情信息](https://github.com/11024227/the-/blob/main/%E8%BB%9F%E5%8A%9F%E6%9C%9F%E6%9C%AB/4-9.png)
+
 
 ## 个人中心详情界面
 
